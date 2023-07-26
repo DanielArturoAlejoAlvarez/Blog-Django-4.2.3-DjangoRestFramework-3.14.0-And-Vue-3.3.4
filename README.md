@@ -10,7 +10,7 @@ Using pipenv, virtualenv preferably.
 
 ## Installation
 
-Using Django, Django Rest Framework preferably.
+Using Django 4.2.3, Django Rest Framework 3.14.0 preferably.
 
 ![alt text]()
 
@@ -27,6 +27,7 @@ Using Postman, Insomnia, Talend API Tester,etc.
 ## Usage
 
 ```shell
+$ git clone https://github.com/DanielArturoAlejoAlvarez/Blog-Django-4.2.3-DjangoRestFramework-3.14.0-And-Vue-3.3.4.git
 
 ```
 
@@ -68,7 +69,7 @@ Follow the following steps and you're good to go! Important:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Blog-Django-4.2.3-DjangoRestFramework-3.14.0-And-Vue-3.3.4. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/DanielArturoAlejoAlvarez/Blog-Django-4.2.3-DjangoRestFramework-3.14.0-And-Vue-3.3.4. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
