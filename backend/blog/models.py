@@ -11,7 +11,10 @@ def user_directory_path(instance,filename):
 
 class Post(models.Model):
 
-    
+    class PostObjects(models.Manager):
+        def get_queryset(self):
+            return super().get_queryset().filter(status='published')
+
     options = (
         ('draft','Draft'),
         ('published','Published'),
@@ -27,6 +30,13 @@ class Post(models.Model):
     author=models.ForeignKey(User, on_delete=models.CASCADE, related_name='post_user')
     status=models.CharField(max_length=10, choices=options, default='draft')
 
-    
+    objects=models.Manager()
+    postobjects=PostObjects()
+
+    class Meta:
+        ordering=('-published',)        
+
+    def __str__(self):
+        return self.title
     
     
