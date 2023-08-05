@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-4xl font-bold underline">
+  <h1 class="text-6xl font-bold text-gray-900">
     {{msg}}
   </h1>
 </template>

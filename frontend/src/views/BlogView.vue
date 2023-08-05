@@ -1,5 +1,5 @@
 <template>
-    <div class="blog">
+    <div class="p-10 mt-6">
         <HelloWorld msg="Our Blog App" />
     </div>
 </template>

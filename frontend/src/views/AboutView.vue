@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="p-10 mt-6">
     <HelloWorld msg="This is an about page"/>
   </div>
 </template>

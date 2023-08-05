@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Blog"/>
+  <div class="p-10 mt-6">
+    <HelloWorld msg="Welcome to Homepage"/>
   </div>
 </template>
 
