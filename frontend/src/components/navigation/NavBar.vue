@@ -2,7 +2,7 @@
     <div class="font-sans antialiased" id="app">
         <nav class="flex items-center justify-between flex-wrap bg-gray-800 text-gray-300 p-6">
             <div class="flex items-center flex-no-shrink text-white mr-6">
-            <img class="mr-4" src="../../assets/MEDIASOFT.png" width="80" />
+            <img class="mr-4" src="../../assets/img/MEDIASOFT.png" width="80" />
             <span class="font-semibold text-xl tracking-tight"></span>
             </div>
             <div class="block sm:hidden">
