@@ -14,8 +14,10 @@
         
             <router-link to="#">
                 <img :src="base + posts.thumbnail" />
-                <p class="text-3xl text-red-600 font-bold">{{posts.title}}</p>
-                {{posts.content}}
+                <div class="p-4">
+                  <p class="text-3xl text-red-600 font-bold mb-3">{{posts.title}}</p>
+                  <p class="text-gray-700 font-medium">{{posts.content}}</p>
+                </div>
             </router-link>
         
         </div>
@@ -35,8 +37,8 @@ export default {
     
     name: 'BlogView',
     components: {
-    HelloWorld
-},
+      HelloWorld
+    },
     data(){
       return {
         APIData: [],
