@@ -12,7 +12,7 @@
       <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
         <div v-for="posts in APIData" :key="posts.id" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
         
-            <router-link to="#">
+            <router-link :to="{ name: 'BlogPost', params: { id: posts.id, title: posts.title, thumbnail: posts.thumbnail, excerpt: posts.excerpt, content: posts.content, slug: posts.slug } }">
                 <img :src="base + posts.thumbnail" />
                 <div class="p-4">
                   <p class="text-3xl text-red-600 font-bold mb-3">{{posts.title}}</p>

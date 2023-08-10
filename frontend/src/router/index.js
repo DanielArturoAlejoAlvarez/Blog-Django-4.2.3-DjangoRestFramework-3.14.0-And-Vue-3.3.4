@@ -22,7 +22,7 @@ const routes = [
   },
   {
     path: '/blog/:slug',
-    name: 'PostDetail',
+    name: 'BlogPost',
     component: ()=>import('../views/PostDetailView.vue')
   }
 ]
