@@ -7,7 +7,7 @@
             class="mr-2"
             width="28"
             src="../assets//img/time-and-calendar.png"
-          />{{ this.post.published }}
+          />{{ getDateTime(this.post.published) }}
         </div>
         <img :src="base + this.post.thumbnail" />
 
@@ -33,6 +33,7 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import { getAPI } from "../assets/js/api.js";
 
+
 export default {
   name: "PostDetailView",
   components: {
@@ -41,10 +42,18 @@ export default {
   data() {
     return {
       post: {},
-      base: getAPI.defaults.baseURL,
+      base: getAPI.defaults.baseURL
     };
   },
-  created() {
+  methods: {
+   getDateTime(dt){
+    let date = new Date(dt).toDateString()
+    let time = new Date(dt).toLocaleTimeString()
+    
+    return date+' '+time
+   }
+  },
+  created() { 
     getAPI
       .get(`/blog/posts/${this.$route.params.slug}`)
       .then((res) => {
